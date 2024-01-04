@@ -1,7 +1,7 @@
 /**
  * Entry Point to Portal App
  * Include any initialisation logic, stylesheets + more here.
- */
+ 
 import React from "react";
 import "src/styles.css";
 
@@ -29,4 +29,17 @@ export const PortalApp: React.FC = () => {
 
   // Return your app
   return null;
+};*/
+
+import React from "react";
+import "src/styles.css";
+
+import { initialise } from "lib/utils/init";
+import { Leonalia } from "./Leonalia";
+
+initialise();
+
+export const PortalApp: React.FC = () => {
+  // Return your app
+  return <Leonalia />;
 };
